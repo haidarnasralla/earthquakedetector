@@ -25,12 +25,12 @@ const Result = ({latitude, longitude, radius}) => {
   }, [latitude, longitude, radius]);
 
   if (isLoading){
-    return <p>Loading...</p>
+    return <p>loading...</p>
   }
 
   const isEarthquakeHappening = result.length > 0;
 
-  return <>{isEarthquakeHappening ? <p>yes, get off the internet</p> : <p>no</p>}</>;
+  return <>{isEarthquakeHappening ? <p>yes! omfg get off the internet</p> : <p>no</p>}</>;
 };
 
 export default Result;
