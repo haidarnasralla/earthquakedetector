@@ -1,0 +1,110 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #ffeb3b;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ff5722;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #4caf50;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(2px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(1px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(2px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(2px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+form {
+  margin: 20px auto;
+  padding: 10px;
+  display: inline-block;
+  background-color: #f0f0f0;
+  border: 2px solid #2196f3;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #f44336;
+  font-weight: bold;
+  text-transform: lowercase;
+  font-style: italic;
+}
+
+select {
+  font-size: 1.5rem;
+  background-color: #2196f3;
+  color: white;
+  border: 2px solid #f44336;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  outline: none;
+}
+
+select:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+label[for="radius"] + select + label {
+  font-size: 1.2rem;
+  margin-left: 10px;
+  color: #4caf50;
+  text-transform: lowercase;
+  font-style: italic;
+  font-weight: bold;
+}
+
+p {
+  font-size: 2rem;
+  margin: 20px;
+  padding: 10px;
+  background-color: #f44336;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.5s, transform 0.5s;
+}
+
+p:nth-child(1) {
+  animation: shake 0.5s infinite;
+}
+
+p:nth-child(2) {
+  background-color: #4caf50;
+}
+
+p.loading {
+  font-size: 1.5rem;
+  font-style: italic;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
